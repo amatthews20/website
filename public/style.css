@@ -1,0 +1,55 @@
+
+header {
+    display: block;
+    background-color: beige;
+    color: black;
+    padding: 2px 0 0 ;
+    margin:0 ;
+}
+.invert {
+    background-color: brown;
+    color: white;
+}
+body {
+    background-color:  white;
+    color: black;
+    margin: 0px;
+  }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    }
+
+.dark-mode-h {
+    background-color: brown;
+    color: red;
+    }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    padding:0;
+    margin:20px;
+  }
+
+  h2 {
+    margin: 10px;
+  }
+
+  p {
+    margin: 20px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+footer {
+    display: block;
+    margin-bottom: 40px;
+    margin:20px;
+}
