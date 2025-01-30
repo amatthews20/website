@@ -10,61 +10,39 @@
 
 <header>
     <nav>
-    <ul>
     <h1>Aidan Matthews</h1>
-    <li><a href="#intro">Home</a></li>
-    <li><a href="#about">About</a></li>
-<button id="darkMode">Dark Mode</button>
+    <button class="tablink" onclick="goSection('Home')">Home</button> 
+    <button class="tablink" onclick="goSection('About')">About</button> 
+    <button class="tablink" onclick="goSection('Research')">Research</button> 
+    <button class="tablink" id="darkMode">Dark Mode</button>
 <script>
     document.getElementById("darkMode").addEventListener("click", function() {
-        document.querySelector("header").classList.toggle("invert");
+        document.querySelector("header").classList.toggle("invert-header");
         document.querySelector("body").classList.toggle("dark-mode");
     });
 </script>
-    </ul>
+<script>
+    function goSection(sectionID) {
+        window.location='#'+sectionID
+    }
+</script>
     </nav>
 </header>
 
 
-
-
-
-
 <body>
 <main> 
-<section id="intro">
+<section id="Home">
 <div class="Container">
 <img src="imgs/spin_wheel.png" alt="spinning wheel" class="center">
 <h2>Spinning Wheel</h2>
 <p>Life is like a spinning wheel.</p>
 </div>
 </section>
-<section id="about">
+<section id="About">
 <div class="Container">
-<h2>Me</h2>
+<h2>About</h2>
 <p> Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt
-    Blah blah laskjfls lskdjdi isddksdif texkt 
     Blah blah laskjfls lskdjdi isddksdif texkt 
     Blah blah laskjfls lskdjdi isddksdif texkt 
     Blah blah laskjfls lskdjdi isddksdif texkt 
@@ -79,16 +57,32 @@
     Blah blah laskjfls lskdjdi isddksdif texkt 
 </p>
 </div>
-</section>            
+</section>       
+<section id="Research">   
+    <h2>Research</h2>
+</section>   
 </main>
 
 
 <footer>
 <h2>Contact Information </h2>
-<u1>
-<li>amatthews@g.harvard.edu </li>
-<li><img src="imgs/orcid_logo.svg" alt="orcid logo" style="width:14px;height:14px" > 
-<a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0009-0000-2762-8736"> 0009-0000-2762-8736 </a>
-</li>
+<div id="container">
+    <div class="box" id="Email">
+        amatthews@g.harvard.edu
+    </div>
+    <div class="box" id="Orcid">    
+    <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0009-0000-2762-8736"> 
+        <img src="imgs/orcid_logo.svg" alt="orcid logo" style="width:25px" > 
+    </a></div>
+    <div class="box" id="LinkedIn">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aidan-matthews-9a18771bb/"> 
+            <img src="imgs/LI_logo.png" alt="linkedIn logo" style="width:25px" > 
+        </a>
+    </div>
+    <div class="box">
+        <a target="_blank" rel="noopener noreferrer" href="texts/Thesis_Final_aidanjm2024.pdf">Thesis</a>
+    </div>
+</div>
+
 </footer>
 </html>
