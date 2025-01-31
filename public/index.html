@@ -1,88 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<title>Aidan's Website</title>
-<link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>Aidan's Website</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
 
+    <body>
+        <!-- Wrapper -->
+        <div id="wrapper"> 
+            <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <div class="title"> 
+                        <h1>Aidan Matthews</h1>
+                        <p class="subtitle">PhD Candidate, Harvard University </p>
+                    </div>
+                    <nav class = "nav">
+                        <button class="tablink" onclick="goSection('Home')">Home</button> 
+                        <button class="tablink" onclick="goSection('About')">About</button> 
+                        <button class="tablink" onclick="goSection('Research')">Research</button> 
+                        <button class="tablink" id="darkMode">Dark Mode</button>
+                    </nav class = "nav">
+                <div class="inner">
 
-<header>
-    <nav>
-    <h1>Aidan Matthews</h1>
-    <button class="tablink" onclick="goSection('Home')">Home</button> 
-    <button class="tablink" onclick="goSection('About')">About</button> 
-    <button class="tablink" onclick="goSection('Research')">Research</button> 
-    <button class="tablink" id="darkMode">Dark Mode</button>
-<script>
-    document.getElementById("darkMode").addEventListener("click", function() {
-        document.querySelector("header").classList.toggle("invert-header");
-        document.querySelector("body").classList.toggle("dark-mode");
-    });
-</script>
-<script>
-    function goSection(sectionID) {
-        window.location='#'+sectionID
-    }
-</script>
-    </nav>
-</header>
+            </header>
 
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+                    <section id="Bio">
+                        <div class="Container">
+                            <h2>About</h2>
+                            <p>Aidan is currently pursuing a PhD in Environmental Science and Engineering from Harvard University under Professor Kaighin McColl. 
+                                Aidan's research interests are in ecohydrology and land-plant-atmosphere interactions. He graduated Summa Cum Laude from Princeton University with a Bachelors
+                                in Civil and Environmental Engineering. In his spare time he enjoys writing about himself in the third person and designing amateurish (is that a word?) websites.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="Home">
+                        <div class="Container">
+                            <h2>Spinning Wheel</h2>
+                            <img src="imgs/spin_wheel.png" alt="spinning wheel" class="center">
+                            <p>Life is like a spinning wheel.</p>
+                        </div>
+                    </section>
+                    <section id="About">
+                        <div class="Container">
+                            <h2>About</h2>
+                            <p> Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                                Blah blah laskjfls lskdjdi isddksdif texkt 
+                            </p>
+                        </div>
+                    </section>     
 
-<body>
-<main> 
-<section id="Home">
-<div class="Container">
-<img src="imgs/spin_wheel.png" alt="spinning wheel" class="center">
-<h2>Spinning Wheel</h2>
-<p>Life is like a spinning wheel.</p>
-</div>
-</section>
-<section id="About">
-<div class="Container">
-<h2>About</h2>
-<p> Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-    Blah blah laskjfls lskdjdi isddksdif texkt 
-</p>
-</div>
-</section>       
-<section id="Research">   
-    <h2>Research</h2>
-</section>   
-</main>
+                    <section id="Research">   
+                        <div class="Container">
+                        <h2>Research</h2>
+                        </div>
+                    </section>   
+                </div>
+            </div>
 
+            <!-- Footer -->
+            <footer>
+                <h2>Contact Information </h2>
+                <div id="container">
+                    <div class="box" id="Email">
+                        amatthews@g.harvard.edu
+                    </div>
+                    <div class="box" id="Orcid">    
+                    <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0009-0000-2762-8736"> 
+                        <img src="imgs/orcid_logo.svg" alt="orcid logo" style="width:25px" > 
+                    </a></div>
+                    <div class="box" id="LinkedIn">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aidan-matthews-9a18771bb/"> 
+                            <img src="imgs/LI_logo.png" alt="linkedIn logo" style="width:25px" > 
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a target="_blank" rel="noopener noreferrer" href="texts/Thesis_Final_aidanjm2024.pdf">Thesis</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
-<footer>
-<h2>Contact Information </h2>
-<div id="container">
-    <div class="box" id="Email">
-        amatthews@g.harvard.edu
-    </div>
-    <div class="box" id="Orcid">    
-    <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0009-0000-2762-8736"> 
-        <img src="imgs/orcid_logo.svg" alt="orcid logo" style="width:25px" > 
-    </a></div>
-    <div class="box" id="LinkedIn">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aidan-matthews-9a18771bb/"> 
-            <img src="imgs/LI_logo.png" alt="linkedIn logo" style="width:25px" > 
-        </a>
-    </div>
-    <div class="box">
-        <a target="_blank" rel="noopener noreferrer" href="texts/Thesis_Final_aidanjm2024.pdf">Thesis</a>
-    </div>
-</div>
-
-</footer>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script>
+            document.getElementById("darkMode").addEventListener("click", function() {
+                document.querySelector("header").classList.toggle("invert-header");
+                document.querySelector("body").classList.toggle("dark-mode");
+            });
+        </script>
+        <script>
+            function goSection(sectionID) {
+                window.location='#'+sectionID
+            }
+        </script>
+    </body>
 </html>

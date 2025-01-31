@@ -1,0 +1,157 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;}
+  
+body, input, select, textarea {
+  color: #000000;
+  font-family: "Times";
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.tablink, h1, h2 {
+  color: #434343;
+}
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+  display: block;
+  font-family: 'Sans-Serif';
+  padding: 0px 0px 47px;
+}
+
+.title {
+  margin: 6em 7em 4em;
+}
+.subtitle {
+  font-size: 1em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.4em;
+  font-weight: 500;
+  margin: 0 0 0.1em;
+  letter-spacing: 0em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-size:1.6em;
+  line-height: 1.5;
+  margin: 1em 0 0.1em 1em;
+  letter-spacing: 0.1em;
+}
+
+/* Style the tab buttons */
+
+hr {
+  margin: 10px 0px 10px 0px;
+  background-color: rgb(102, 102, 102);
+  height: 1px;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+}
+
+.nav {
+  margin: 0px 0 7em 0;
+  float:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+}
+
+.tablink {
+  background-color: rgb(222, 222, 222);
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em 0.5em;
+  width: 25%;
+  font-family: "Times";
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #d1cfcf;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p {
+  margin: 0 3em 0 3em;
+  font-size: 0.9em;
+  line-height: 1.75;
+}
+
+footer {
+    display: block;
+    margin-bottom: 40px;
+    margin: 0px;
+}
+
+#container {
+  /* Using the grid property */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* Making equal spaced divs */
+  gap: 1rem;
+  margin:30px;
+}
+
+.box {
+  border: none;
+  background-color: none;
+  text-align:center;
+  font-size: 20px;
+}
+
+/* Type */
