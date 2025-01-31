@@ -18,9 +18,9 @@
                         <p class="subtitle">PhD Candidate, Harvard University </p>
                     </div>
                     <nav class = "nav">
-                        <button class="tablink" onclick="goSection('Home')">Home</button> 
                         <button class="tablink" onclick="goSection('About')">About</button> 
                         <button class="tablink" onclick="goSection('Research')">Research</button> 
+                        <button class="tablink" onclick="goSection('Tutoring')">Tutoring</button> 
                         <button class="tablink" id="darkMode">Dark Mode</button>
                     </nav class = "nav">
                 <div class="inner">
@@ -30,25 +30,36 @@
             <!-- Main -->
             <div id="main">
                 <div class="inner">
-                    <section id="Bio">
+                    <section id="About">
                         <div class="Container">
                             <h2>About</h2>
+                            <img src="imgs/spin_wheel.png" alt="spinning wheel" class="center">
+                            <p>Life is like a spinning wheel.</p>
                             <p>Aidan is currently pursuing a PhD in Environmental Science and Engineering from Harvard University under Professor Kaighin McColl. 
                                 Aidan's research interests are in ecohydrology and land-plant-atmosphere interactions. He graduated Summa Cum Laude from Princeton University with a Bachelors
                                 in Civil and Environmental Engineering. In his spare time he enjoys writing about himself in the third person and designing amateurish (is that a word?) websites.
                             </p>
+                            <p> <a target="_blank" rel="noopener noreferrer" href="texts/resume.pdf"> Resume </a> </p>
                         </div>
                     </section>
-                    <section id="Home">
+                    <section id="Research">
                         <div class="Container">
-                            <h2>Spinning Wheel</h2>
-                            <img src="imgs/spin_wheel.png" alt="spinning wheel" class="center">
-                            <p>Life is like a spinning wheel.</p>
+                            <h2>Research</h2>
+                                <div class="subclass">
+                                    <h3>Papers</h3>
+                                </div>
+                                <div class="subclass">
+                                    <h3>Thesis</h3>
+                                    <a target="_blank" rel="noopener noreferrer" href="texts/Thesis_Final_aidanjm2024.pdf">Thesis</a>
+                                </div>
+                                <div class="subclass">
+                                    <h3>Other</h3>
+                                </div>
                         </div>
                     </section>
-                    <section id="About">
+                    <section id="Tutoring">
                         <div class="Container">
-                            <h2>About</h2>
+                            <h2>Tutoring</h2>
                             <p> Blah blah laskjfls lskdjdi isddksdif texkt 
                                 Blah blah laskjfls lskdjdi isddksdif texkt 
                                 Blah blah laskjfls lskdjdi isddksdif texkt 
@@ -65,12 +76,7 @@
                             </p>
                         </div>
                     </section>     
-
-                    <section id="Research">   
-                        <div class="Container">
-                        <h2>Research</h2>
-                        </div>
-                    </section>   
+ 
                 </div>
             </div>
 
@@ -91,7 +97,6 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a target="_blank" rel="noopener noreferrer" href="texts/Thesis_Final_aidanjm2024.pdf">Thesis</a>
                     </div>
                 </div>
             </footer>
@@ -101,7 +106,6 @@
         <script src="assets/js/jquery.min.js"></script>
         <script>
             document.getElementById("darkMode").addEventListener("click", function() {
-                document.querySelector("header").classList.toggle("invert-header");
                 document.querySelector("body").classList.toggle("dark-mode");
             });
         </script>

@@ -25,16 +25,44 @@ footer, header, hgroup, menu, nav, section {
   display: block;}
   
 body, input, select, textarea {
-  color: #000000;
   font-family: "Times";
   font-size: 16pt;
   font-weight: 300;
   line-height: 1.75;
 }
 
+/* color */
+body {
+  color: #000000;
+}
+
 .tablink, h1, h2 {
   color: #434343;
 }
+.tablink {
+  background-color: rgb(222, 222, 222);
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #d1cfcf;
+}
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  .tablink, h1, h2 {
+    color: white;
+  }
+  .tablink {
+    background-color: #434343;
+  }
+  .tablink:hover {
+    background-color: #d1cfcf;
+  }
+}
+
 
 body {
   line-height: 1;
@@ -71,12 +99,21 @@ h1 {
   letter-spacing: 0em;
 }
 
-h2, h3, h4, h5, h6 {
+h2{
   font-weight: 500;
   font-size:1.6em;
   line-height: 1.5;
   margin: 1em 0 0.1em 1em;
   letter-spacing: 0.1em;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 200;
+  font-size:1.2em;
+  line-height: 1.5;
+  margin: 1em 0 0.1em 1em;
+  letter-spacing: 0.0em;
+
 }
 
 /* Style the tab buttons */
@@ -100,8 +137,6 @@ hr {
 }
 
 .tablink {
-  background-color: rgb(222, 222, 222);
-  color: black;
   float: left;
   border: none;
   outline: none;
@@ -114,10 +149,7 @@ hr {
   line-height: 1.75;
 }
 
-/* Change background color of buttons on hover */
-.tablink:hover {
-  background-color: #d1cfcf;
-}
+
 
 .center {
   display: block;
@@ -130,6 +162,10 @@ p {
   margin: 0 3em 0 3em;
   font-size: 0.9em;
   line-height: 1.75;
+}
+
+.subclass {
+  margin: 0 3em 0 3em;
 }
 
 footer {
