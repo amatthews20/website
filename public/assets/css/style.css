@@ -4,9 +4,9 @@
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+code, del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
@@ -106,6 +106,7 @@ body, input, select, textarea {
 
 /* color */
 body {
+  background-color: white;
   color: #000000;
 }
 
@@ -139,8 +140,6 @@ body {
   color:rgb(189, 94, 0)
 }
 
-
-
 .dark-mode {
   background-color: black;
   color: white;
@@ -154,7 +153,6 @@ body {
   .logo{
     filter:invert(1) brightness(100)
   }
-
 } 
 
 
@@ -187,11 +185,6 @@ h3, h4, h5, h6 {
 }
 
 /* Style the tab buttons */
-
-
-
-
-
 
 
 .center {
