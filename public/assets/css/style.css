@@ -46,6 +46,7 @@ header{
 #subtitle{
   font-size: 1em;
   line-height: 1em;
+  margin: 0;
 }
 
 h1{
@@ -68,7 +69,10 @@ h1{
   padding-top: 0px;
   padding-right: 20px;
   /* filter: grayscale(1) contrast(1.5) brightness(1);  */
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
+  filter: invert(9%) sepia(91%)
+   saturate(7049%) hue-rotate(14deg) 
+   brightness(90%) contrast(118%);
 }
 
 #logo_box {
@@ -82,6 +86,14 @@ nav {
   margin-top: 0;
 }
 
+p {
+  margin: 0 0 0.5em 1em;
+}
+
+.subclass {
+  margin: 0 20px 0 20px;
+}
+
 hr {
   /* margin: 10px 0px 10px 0px; */
   background-color: black;
@@ -91,6 +103,8 @@ hr {
   margin-right: auto; */
   width: 100%
 }
+
+
 
 
 article, aside, details, figcaption, figure,
@@ -105,9 +119,17 @@ body, input, select, textarea {
 }
 
 /* color */
+:root {
+  --red: rgb(203, 0, 0);
+  --orange: rgb(189, 94, 0);
+  --white: whitesmoke;
+  --gray: rgb(105, 105, 105);
+  --black: black;
+}
+
 body {
-  background-color: white;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .nav {
@@ -120,7 +142,7 @@ body {
 }
 
 .tablink {
-  background-color: white;
+  background-color: var(--white);
   float: left;
   border: none;
   outline: none;
@@ -137,23 +159,28 @@ body {
 .tablink:hover {
   /* background-color: #d1cfcf; */
   font-size: 1.1em;
-  color:rgb(189, 94, 0)
+  color:var(--red);
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   .tablink {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
   }
   .tablink:hover{
-    color:rgb(189, 94, 0)
+    color:var(--red)
   }
   .logo{
-    filter:invert(1) brightness(100)
+    filter:invert(1) brightness(100) 
   }
+  .logo:hover{
+    filter: invert(9%) sepia(91%)
+    saturate(7049%) hue-rotate(14deg) 
+    brightness(90%) contrast(118%);
 } 
+}
 
 
 header {
@@ -170,18 +197,19 @@ h1 {
 
 h2{
   font-weight: 500;
-  font-size:1.6em;
-  line-height: 1.5;
+  font-size:1.7em;
+  line-height: 2;
   /* margin: 1em 0 0.1em 1em; */
   letter-spacing: 0.1em;
 }
 
-h3, h4, h5, h6 {
-  font-weight: 200;
-  font-size:1.2em;
-  line-height: 1.5;
+h3 {
+  font-weight: 600;
+  color:var(--gray);
+  font-size: 1.2em;
+  line-height: 2;
   /* margin: 1em 0 0.1em 1em; */
-  letter-spacing: 0.0em;
+  letter-spacing: 0em;
 }
 
 /* Style the tab buttons */
@@ -189,20 +217,17 @@ h3, h4, h5, h6 {
 
 .center {
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
 }
 
 p {
-  /* margin: 0 3em 0 3em; */
+  /*  top left bottom right */
   font-size: 0.9em;
   line-height: 1.75;
 }
 
-.subclass {
-  /* margin: 0 3em 0 3em; */
-}
 
 section {
   /* padding: 1em; */
@@ -228,5 +253,14 @@ footer {
 }
 
 
+a:link {
+  color: var(--red);
+  background-color: transparent;
+  text-decoration: none;
+}
 
-
+a:visited {
+  color: var(--red);
+  background-color: transparent;
+  text-decoration: none;
+}

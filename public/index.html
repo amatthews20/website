@@ -19,7 +19,7 @@
                     </div>
                     <div id="logo_box">
                         <a style="text-decoration: none" target="_blank" rel="noopener noreferrer" href="https://orcid.org/0009-0000-2762-8736"> 
-                            <img class="logo" src="imgs/orcid_logo.svg" alt="orcid logo"> 
+                            <img class="logo" src="imgs/orcid-svgrepo-com.svg" alt="orcid logo"> 
                         </a>
                         <a style="text-decoration: none" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aidan-matthews-9a18771bb/"> 
                             <img id="LI_logo" class="logo" src="imgs/LI_logo2.svg" alt="linkedIn logo" > 
@@ -27,13 +27,16 @@
                         <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/amatthews20"> 
                             <img class="logo" src="imgs/github-mark.svg" alt="github logo"> 
                         </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://lichess.org/@/ryzen83"> 
+                            <img class="logo" src="imgs/lichess_logo.svg" alt="lichess logo"> 
+                        </a>
                     </div>
 
                     <nav class = "nav">
                         <button class="tablink" onclick="goSection('About')">About</button> 
                         <button class="tablink" onclick="goSection('Research')">Research</button> 
                         <button class="tablink" onclick="goSection('Tutoring')">Tutoring</button> 
-                        <button class="tablink" id="darkMode">Dark Mode</button>
+                        <button class="tablink" id="darkMode">Spooky</button>
                     </nav class = "nav">
 
                 <div class="inner">
@@ -42,48 +45,141 @@
             <!-- Main -->
             <div id="main">
                 <div class="inner">
+                    <section id="Spin">
+                        <div class="Container">
+                            <h2>Spinning Wheel</h2>
+                            <img src="imgs/spin_wheel.png" alt="spinning wheel" class="center">
+                            <p style="text-align: center;">"Life is like a spinning wheel."</p>                
+                        </div>
+                    </section>
                     <section id="About">
                         <div class="Container">
                             <h2>About</h2>
-                            <img src="imgs/spin_wheel.png" alt="spinning wheel" class="center">
-                            <p>Life is like a spinning wheel.</p>
-                            <p>Aidan is currently pursuing a PhD in Environmental Science and Engineering from Harvard University under Professor Kaighin McColl. 
-                                Aidan's research interests are in ecohydrology and land-plant-atmosphere interactions. He graduated Summa Cum Laude from Princeton University with a Bachelors
-                                in Civil and Environmental Engineering. In his spare time he enjoys writing about himself in the third person and designing amateurish websites.
-                            </p>
-                            <p> <a target="_blank" rel="noopener noreferrer" href="texts/resume.pdf"> Resume </a> </p>
+                                <div class="subclass"> 
+                                    <p>Aidan is currently pursuing a PhD in Environmental Science and Engineering from Harvard University under Professor Kaighin McColl. 
+                                        Aidan's research interests are in ecohydrology and land-plant-atmosphere interactions. He graduated Summa Cum Laude from Princeton University with a Bachelors
+                                        in Civil and Environmental Engineering. In his spare time he enjoys writing about himself in the third person and designing amateurish websites. 
+                                        Challenge me in chess, link is the horse icon.
+                                    </p>
+                                    <p> <a target="_blank" rel="noopener noreferrer" href="texts/resume.pdf"> Resume </a> </p>
+                                </div>
                         </div>
                     </section>
                     <section id="Research">
                         <div class="Container">
                             <h2>Research</h2>
                                 <div class="subclass">
-                                    <h3>Environmental Modeling</h3>
-
+                                    <h3>Ecohydrology</h3>
+                                    <p> <i> Do you know how water flows up a tree? </i> </p>
+                                    <p>
+                                        Ecohydrology is the study of plant (eco) water (hydrology) 
+                                        interactions from the global to the leaf scale. 
+                                        The reason water is able to flow against gravity up a tree
+                                        is the same reason a puddle will evaporate from a liquid to water vapor. 
+                                        The atmosphere is relatively dry (even on humid days) and acts like a sponge
+                                        pulling the water out from the leaves. When the water is sucked out 
+                                        of the leaves it acts like a rope pulling up on the water in the rest of the tree 
+                                        down to the roots, which ultimately suck water from the soil. The drier the soil is 
+                                        the more tension is required to pull it up. When water is under tension like this its pressure is negative.
+                                        A negative pressure means that if exposed to the atmosphere it would instantly boil! The reason
+                                        the trees are able to stop water from spontaneously boiling at negative pressures is still not 
+                                        well understood and an active area of research.
+                                    </p>
+                                    <p>
+                                        So far my work has been on models of stomata -- the tiny mouths on the leaves of plants that open
+                                        to allow CO2 to diffuse in. When stomata open water can escape however, which means a plant will not 
+                                        want to keep stomata open for longer than it needs to. Collectively, stomata act as a critical valve
+                                        for both the carbon and water cycles. Thus understanding them and when and why they open is critical. 
+                                        In this <a  target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1111/nph.20035">paper</a> I develop an optimization theory that 
+                                        explains mathematically why 'optimal' stomatal behavior is coupled to a plant's resilience to water stress. 
+                                        I also demonstrate an intuitive but previously unquantified idea, that it is optimal for plant resistance to water
+                                        stress to increase with aridity. 
+                                    </p>
                                 </div>
                                 <div class="subclass">
+                                    <h3>Geochemical Cycles</h3>
+                                    <p>
+                                        Simple, non-dimensional models can be hugely important for understanding 
+                                        complex and multivariate environmental phenomena like nutrient cycles in the soil. 
+                                        Plants need nutrients (the big ones are nitrogen, phosphorus, and potassium) to 
+                                        perform vital functions. A lack of nutrients can limit agricultural productivity. 
+                                        The soil, however, is highly complex and each nutrient can exist in a variety of 
+                                        compounds and redox states. Nitrogen for instance, can range from having plus four electrons
+                                        in nitrate to having minus three electrons in ammonia! The transitions between states 
+                                        are spontaneous due to favorable conditions or are mediated by organisms, usually 
+                                        bacteria. A good example is nitrogen fixing bacteria which provide natural nitrogen fertilization
+                                        for plants by converting nitrogen gas (N2), which is abundant in the atmosphere, to ammonia, a form 
+                                        of nitrogen that is available for plant uptake. You can read more about the 
+                                        <a target="_blank" rel="noopener noreferrer" href = https://www.nature.com/scitable/knowledge/library/the-nitrogen-cycle-processes-players-and-human-15644632/#:~:text=Nitrogen%20Fixation,-Nitrogen%20gas%20(N&text=For%20nitrogen%20to%20be%20available,nitrogen%20is%20called%20nitrogen%20fixation.>
+                                        nitrogen cycle here<a/>.  
+                                    </p>
+                                    <p>
+                                        A much less studied soil chemical cycle is the iron cycle, a micro nutrient for plants. The iron cycle 
+                                        is significant not only as a nutrient but also for its varied interactions with soil organic carbon (SOC). 
+                                        SOC is a major store of carbon that can serve as a sink of CO2, or a source. The lifetime of SOC in the soil 
+                                        can vary from days to millenia and has major ramifications for the rate of climate change. Iron is hugely important 
+                                        because in its mineral form (Fe3) it 'protects' SOC that latches on from being decomposed back into CO2. However,
+                                        when the soil is flooded Fe3 can be reduced to Fe2, which (1) releases the protected carbon and (2) serves as an oxidizing 
+                                        agent for further production of CO2. Thus, the effect that iron has on the carbon cycle is complex and depends on soil 
+                                        moisture fluctations. I wrote my 
+                                        <a target="_blank" rel="noopener noreferrer" href="texts/Thesis_Final_aidanjm2024.pdf">thesis</a>
+                                         on modeling the soil iron cycle and its interactions with the carbon cycle. The main conclusions were: (1) an analytical 
+                                         solution to a stochastic differential equation which solves for what fraction of the time iron is in its Fe2 vs Fe3 state 
+                                         given a few parameters (rate of oxidation, average rainfall...); and (2) that rewetting previously drained wetlands (seen as 
+                                         generally a good thing) can lead to increased rates of carbon emissions by reducing the iron from Fe3 to Fe2 and releasing the 
+                                         attached SOC. 
+                                    </p>
+                                </div>
 
+                                <div class="subclass">
                                     <h3>Land-Atmosphere Interactions</h3>
+                                    <p>
+                                        Land, known far and wide as the bottom boundary condition, interacts with the atmosphere to determine 
+                                        the temperature and humidity that plants and animals feel. The atmospheric boundary layer (ABL) is the bottom 
+                                        layer of the atmosphere going from surface level to several kilometers. During the day is defined by turbulent mixing and 
+                                        grows in height as the day progressess and more heat is transfered from the ground to the air. Heat can be transferred in 
+                                        from the ground to the air as radiation, sensible heat, and latent heat. Latent heat is just the energy that is released when 
+                                        water evaporates. In other words, the evaporation of water does not just affect the water cycle but is also critical for the earth's energy balance. 
+                                        About 2/3 of land evaporation comes from plants (called transpiration), but plants are able to control 
+                                        when they evaporate using their stomata (we are back to ecoyhdrology!). Plants, as well as ice, different colored rocks, and 
+                                        human land use change can all affect the land surface in several ways. First, it can change the albedo (reflectiveness) of surfaces
+                                        which can change how much radiation is absorbed by the land. Asphalt is always hot in the summer because its black and has a low albedo, meaning
+                                        it absorbs much more light than it reflects. Another way land properties affect the atmosphere is through surface roughness. Grasses, 
+                                        corn fields, towns, sky scrapers, and mountains all introduce roughness into the path of wind and change the dynamics in the lower atmosphere. 
+                                    </p>
+                                    <p>
+                                        Feedback cycles can occur in the land-plant-atmosphere system. For instance rainforests have dense vegetation that is incredibly efficient at evaporating 
+                                        water compared to bare soil. This means that more water is put back into the atmosphere when it rains over the Amazon. More water in the atmosphere 
+                                        increases the rate of precipitation, which promotes the growth of dense vegetation. You can read more about it  
+                                        <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1038/ncomms14681">here</a>. This feedback also means 
+                                        that disrupting the cycle, i.e. deforestation, will disrupt the feedback loop and lead to amplified droughts and deforestation. As an undergraduate
+                                        I developed a coupled model of the plant-atmosphere system using a simplified boundary layer model for the atmosphere and the Photo3 model
+                                        for plants. I found that CAM plants (e.g. succulents/cacti) can significantly alter the energy and water conditions of the ABL because they transpire at night, 
+                                        rather than during the day. The code for that project can be found
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/amatthews20/Photo3_Atmosphere">here</a>,
+                                         and the original Photo3 model (credit Sam Hartz) can be found 
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/samhartz/Photo3">here</a>.
                                 </div>
                                 <div class="subclass">
                                     <h3>Publications</h3>
-                                    <div class="csl-bib-body" style="line-height: 1.5; margin-left: 2em; text-indent:-2em;">
-                                        <div class="csl-entry">Matthews, A., Katul, G., &amp; Porporato, A. (2024). Multiple time scale optimization explains functional trait responses to leaf water potential. <i>New Phytologist</i>, <i>244</i>(2), 426–435. <a href="https://doi.org/10.1111/nph.20035">https://doi.org/10.1111/nph.20035</a></div>
+                                    <div style="font-size: 0.9em; line-height: 1.5; margin-left: 2em; text-indent:-2em;">
+                                        <div>Matthews, A., Katul, G., &amp; Porporato, A. (2024). Multiple time scale optimization explains functional trait responses to leaf water potential. <i>New Phytologist</i>, <i>244</i>(2), 426–435. <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1111/nph.20035">https://doi.org/10.1111/nph.20035</a></div>
                                         <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1111%2Fnph.20035&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Multiple%20time%20scale%20optimization%20explains%20functional%20trait%20responses%20to%20leaf%20water%20potential&amp;rft.jtitle=New%20Phytologist&amp;rft.volume=244&amp;rft.issue=2&amp;rft.aufirst=Aidan&amp;rft.aulast=Matthews&amp;rft.au=Aidan%20Matthews&amp;rft.au=Gabriel%20Katul&amp;rft.au=Amilcare%20Porporato&amp;rft.date=2024&amp;rft.pages=426-435&amp;rft.spage=426&amp;rft.epage=435&amp;rft.issn=1469-8137&amp;rft.language=en"></span>
-                                      </div>
-                                    <div class="csl-bib-body" style="line-height: 1.5; margin-left: 2em; text-indent:-2em;">
-                                    <div class="csl-entry">Matthews, A. (2024). <i>The Stochastic Ferrous Wheel and its Implications for the Carbon Cycle</i>. <a href="https://dataspace.princeton.edu/handle/88435/dsp016t053k35x">Thesis Archive</a>
-                                        (<a target="_blank" rel="noopener noreferrer" href="texts/Thesis_Final_aidanjm2024.pdf">PDF</a>)
                                     </div>
-                                    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20Stochastic%20Ferrous%2
-                                    0Wheel%20and%20its%20Implications%20for%20the%20Carbon%20Cycle&amp;rft.aufirst=Aidan&amp;rft.aulast=Matthews&amp;rft.au=Aidan%20Matthews&amp;rft.date=2024"></span>
-                                </div>
+                                    <div  style="font-size: 0.9em; line-height: 1.5; margin-left: 2em; text-indent:-2em;">
+                                        <div>Matthews, A. (2024). <i>The Stochastic Ferrous Wheel and its Implications for the Carbon Cycle</i>. <a target="_blank" rel="noopener noreferrer" href="https://dataspace.princeton.edu/handle/88435/dsp016t053k35x">Thesis Archive</a>
+                                            (<a target="_blank" rel="noopener noreferrer" href="texts/Thesis_Final_aidanjm2024.pdf">PDF</a>)
+                                        </div>
+                                        <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20Stochastic%20Ferrous%2
+                                        0Wheel%20and%20its%20Implications%20for%20the%20Carbon%20Cycle&amp;rft.aufirst=Aidan&amp;rft.aulast=Matthews&amp;rft.au=Aidan%20Matthews&amp;rft.date=2024"></span>
+                                    </div>
                                 </div>
                         </div>
                     </section>
                     <section id="Tutoring">
                         <div class="Container">
                             <h2>Tutoring</h2>
+                            <div class="subclass">
                             <p> 
                                 Aidan has several years of tutoring and mentoring experience for a variety of STEM topics. 
                                 He was a tutor for two years at the McGraw Center for teaching and 
@@ -91,8 +187,9 @@
 
                                 Aidan enjoys teaching math and science at all levels (up to his own limit of knowledge?). 
                                 He is also available for SAT/ACT prep and general college/graduate school advice.
-                                If you are interested please email at <i>amatthews@g.harvard.edu</i>.
+                                If you are interested please email at <i style="color:rgb(203, 0, 0)">amatthews@g.harvard.edu</i>.
                             </p>
+                            </div>
                         </div>
                     </section>     
                 </div>
@@ -103,23 +200,6 @@
             <footer>
                 <h2>Contact </h2>
                 <div id="container">
-                    <div class="box" id="Email">
-                        amatthews@g.harvard.edu
-                    </div>
-                    <div class="box" id="Orcid">    
-                    <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0009-0000-2762-8736"> 
-                        <img src="imgs/orcid_logo.svg" alt="orcid logo" style="width:25px" > 
-                    </a></div>
-                    <div class="box" id="LinkedIn">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aidan-matthews-9a18771bb/"> 
-                            <img src="imgs/LI_logo.png" alt="linkedIn logo" style="width:25px" > 
-                        </a>
-                    </div>
-                    <div class="box" id="Github">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/amatthews20"> 
-                            <img src="imgs/github-mark.svg" alt="github logo" style="width:25px" > 
-                        </a>
-                    </div>
                 </div>
             </footer> -->
         </div>
