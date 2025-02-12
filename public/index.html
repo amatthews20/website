@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <title>Aidan's Website</title>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -24,21 +24,19 @@
                         <a style="text-decoration: none" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aidan-matthews-9a18771bb/"> 
                             <img id="LI_logo" class="logo" src="imgs/LI_logo2.svg" alt="linkedIn logo" > 
                         </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/amatthews20"> 
+                        <a style='text-decoration: none' target="_blank" rel="noopener noreferrer" href="https://www.github.com/amatthews20"> 
                             <img class="logo" src="imgs/github-mark.svg" alt="github logo"> 
                         </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://lichess.org/@/ryzen83"> 
-                            <img class="logo" src="imgs/lichess_logo.svg" alt="lichess logo"> 
+                        <a style='text-decoration: none' target="_blank" rel="noopener noreferrer" href="https://lichess.org/@/ryzen83"> 
+                            <img class="logo" src="imgs/lichess-seeklogo.svg" alt="lichess logo"> 
                         </a>
                     </div>
-
-                    <nav class = "nav">
-                        <button class="tablink" onclick="goSection('About')">About</button> 
-                        <button class="tablink" onclick="goSection('Research')">Research</button> 
-                        <button class="tablink" onclick="goSection('Tutoring')">Tutoring</button> 
-                        <button class="tablink" id="darkMode">Spooky</button>
-                    </nav class = "nav">
-
+                        <nav class = "nav">
+                            <div class="column"> <button class="tablink" onclick="goSection('About')">About</button> </div>
+                            <div class="column"><button class="tablink" onclick="goSection('Research')">Research</button> </div>
+                            <div class="column"><button class="tablink" onclick="goSection('Tutoring')">Tutoring</button> </div>
+                            <div class="column"><button class="tablink" id="darkMode">Spooky</button></div>
+                        </nav class = "nav">
                 <div class="inner">
             </header>
             <hr> </hr>
@@ -109,9 +107,7 @@
                                         are spontaneous due to favorable conditions or are mediated by organisms, usually 
                                         bacteria. A good example is nitrogen fixing bacteria which provide natural nitrogen fertilization
                                         for plants by converting nitrogen gas (N2), which is abundant in the atmosphere, to ammonia, a form 
-                                        of nitrogen that is available for plant uptake. You can read more about the 
-                                        <a target="_blank" rel="noopener noreferrer" href = https://www.nature.com/scitable/knowledge/library/the-nitrogen-cycle-processes-players-and-human-15644632/#:~:text=Nitrogen%20Fixation,-Nitrogen%20gas%20(N&text=For%20nitrogen%20to%20be%20available,nitrogen%20is%20called%20nitrogen%20fixation.>
-                                        nitrogen cycle here<a/>.  
+                                        of nitrogen that is available for plant uptake.
                                     </p>
                                     <p>
                                         A much less studied soil chemical cycle is the iron cycle, a micro nutrient for plants. The iron cycle 
@@ -205,7 +201,6 @@
         </div>
 
         <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
         <script>
             document.getElementById("darkMode").addEventListener("click", function() {
                 document.querySelector("body").classList.toggle("dark-mode");
